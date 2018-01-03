@@ -16,6 +16,7 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer('*', 'App\Http\Composers\LayoutComposer');
+        View::composer('*', 'App\Http\Composers\MenuComposer');
     }
 
     public function register()

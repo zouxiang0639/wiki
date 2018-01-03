@@ -1,0 +1,1 @@
+<script src="{!! admin_asset('lib/layui/layui.js') !!}" type="text/javascript"></script>

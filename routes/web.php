@@ -12,4 +12,6 @@
 */
 
 Route::get('/', ['uses' => "Index\\IndexController@index", 'as' => 'index']);
+Route::get('/books', ['uses' => "Books\\BooksController@index", 'as' => 'books']);
+Route::get('/map', ['uses' => "Map\\MapController@index", 'as' => 'map']);
 
