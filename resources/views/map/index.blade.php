@@ -15,13 +15,13 @@
 
 @section('content')
     <div class="layui-row layui-col-space10">
+        @foreach($list as $item)
         <div class="layui-col-md4">
-            @foreach($list as $item)
-                <div class="grid-demo">
-                    <a target="_blank" href="{!! $item['route'] !!}">{!! $item['title'] !!}</a>
-                </div>
-            @endforeach
+            <div class="grid-demo">
+                <a target="_blank" href="{!! $item['route'] !!}">{!! $item['title'] !!}</a>
+            </div>
         </div>
+        @endforeach
     </div>
 @stop
 

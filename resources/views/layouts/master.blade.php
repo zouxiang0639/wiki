@@ -4,17 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>@yield('title', 'Sample App') - Laravel 入门教程</title>
-    <style>
-        .layui-body pre{
-            padding: 16px;
-            overflow: auto;
-            font-size: 85%;
-            line-height: 1.45;
-            background-color: #f6f8fa;
-            border-radius: 3px;
-            margin: 10px 0px;
-        }
-    </style>
     @include('partials.style')
     @yield('style')
 </head>

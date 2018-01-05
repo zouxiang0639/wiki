@@ -10,7 +10,8 @@ class MenuComposer
     {
         $this->menu = [
             'mysql' => self::mySql(),
-            'algorithm' => self::algorithm()
+            'algorithm' => self::algorithm(),
+            'php' => self::php()
         ];
     }
 
@@ -38,6 +39,15 @@ class MenuComposer
             ['约瑟夫环算法', 'algorithm-Joseph_circle.md']
         ];
         return self::formatBooksRoutes($algorithm);
+    }
+
+    public function php()
+    {
+        $php = [
+            ['php函数', 'php-function.md'],
+            ['php案例', 'php-case.md']
+        ];
+        return self::formatBooksRoutes($php);
     }
 
     private function formatBooksRoutes($routes)
