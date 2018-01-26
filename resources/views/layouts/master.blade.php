@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>@yield('title', 'Sample App') - Laravel 入门教程</title>
+    <title>笔记本</title>
     @include('partials.style')
     @yield('style')
 </head>

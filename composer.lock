@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e069bf5ec11b2ac6142671a4af8ea5c",
+    "content-hash": "e262f02b12a2377ff10d9eb5bb9d746c",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2283,6 +2283,39 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "zouxiang0639/notebook",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zouxiang0639/notebook.git",
+                "reference": "a710fc4a95891ea60a4e058a3924ebf07a836d80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/zouxiang0639/notebook/a710fc4a95891ea60a4e058a3924ebf07a836d80.zip",
+                "reference": "a710fc4a95891ea60a4e058a3924ebf07a836d80",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "notebook\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "zouxiang",
+                    "email": "542506511@qq.com"
+                }
+            ],
+            "description": "个人笔记本",
+            "time": "2018-01-26 02:56:20"
         }
     ],
     "packages-dev": [
@@ -3970,7 +4003,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "zouxiang0639/notebook": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
