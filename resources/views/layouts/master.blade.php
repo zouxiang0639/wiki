@@ -14,8 +14,8 @@
         <div class="layui-logo">layui 后台布局</div>
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <ul class="layui-nav layui-layout-left">
-            <li class="layui-nav-item"><a href="">控制台</a></li>
-            <li class="layui-nav-item"><a href="">商品管理</a></li>
+            <li class="layui-nav-item"><a href="{!! route('books.search') !!}">笔记本</a></li>
+            <li class="layui-nav-item"><a href="{!! route('accounting') !!}">记账本</a></li>
             <li class="layui-nav-item"><a href="">用户</a></li>
             <li class="layui-nav-item">
                 <a href="javascript:;">其它系统</a>
@@ -46,7 +46,7 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree"  lay-filter="test">
                 @foreach($menu as $key => $item)
-                    <li class="layui-nav-item"><a href="{!! route('map', ['k' => $key]) !!}">{!! $key !!}</a></li>
+                    <li class="layui-nav-item"><a href="{!! $item['url'] !!}">{!! $key !!}</a></li>
                 @endforeach
             </ul>
         </div>

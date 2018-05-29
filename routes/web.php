@@ -11,7 +11,15 @@
 |
 */
 
-Route::get('/', ['uses' => "Index\\IndexController@index", 'as' => 'index']);
-Route::get('/books', ['uses' => "Books\\BooksController@index", 'as' => 'books']);
-Route::get('/map', ['uses' => "Map\\MapController@index", 'as' => 'map']);
+Route::get('/', ['uses' => "Books\\BooksController@search", 'as' => 'index']);
+//笔记本
+Route::group(['prefix' => 'books'], function(){
+    Route::get('/', ['uses' => "Books\\BooksController@index", 'as' => 'books']);
+    Route::get('/search', ['uses' => "Books\\BooksController@search", 'as' => 'books.search']);
+    Route::get('/map', ['uses' => "Books\\BooksController@map", 'as' => 'books.map']);
+});
 
+//账本
+Route::group(['prefix' => '/accounting'], function(){
+    Route::get('/', ['uses' => "Accounting\\AccountingController@index", 'as' => 'accounting']);
+});
